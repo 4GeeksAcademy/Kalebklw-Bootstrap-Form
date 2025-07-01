@@ -4,21 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="row Form-Header">
-            <div class="col">
-                
+
+            <div class="row Form-Header d-flex">
+                <div class="col-12 bg-success justify-content-center">
+                    <p class="text-start">Payment Form Example</p>
+                </div>
             </div>
-        </div>
-        <div class="row Form-Alert"></div>
-        <div class="row Card-Information"></div>
-        <div class="row Name-Information"></div>
-        <div class="row Location-Information"></div>
-        <div class="row Form-Misc"></div>
-        <div class="row Form-Submit"></div>
+
+            <div class="row Form-Alert">
+                <div class="col">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are Missing
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex Card-Information">
+                <div class="col-5">
+                    <label for="formGroupExampleInput" class="form-label">Card #</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="XXXXXXXXXXXX">
+                </div>
+                <div class="col-3">
+                    <label for="formGroupExampleInput2" class="form-label">CVC #</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000">
+                </div>
+                <div class="col-4">
+                    <label for="formGroupExampleInput2" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Amount">
+                </div>
+            </div>
+
+            <div class=" Body-Left-Right d-flex">
+                <div class="Body-Left">
+                    <div class="row col-6" style="width: 1320px;">
+                        <div>
+                            <div class="col-6">
+                                <label for="formGroupExampleInput" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="col-6">
+                                <label for="formGroupExampleInput" class="form-label">City</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="Body-Right" style="margin-left: -617px;">
+                    <div class="row col-6" style="width: 1320px;">
+                        <div class="col-6" style="padding-right: 30px;">
+                            <div>
+                                <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="d-flex">
+                                <div class="col">
+                                    <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                </div>
+                                <div class="col">
+                                    <label for="formGroupExampleInput" class="form-label">Postal Code</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="row Form-Submit">
+
+            </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
